@@ -47,13 +47,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endCo
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 80px;
   font-size: 20px;
   
 }
 .logo {
   display: block;
   margin: 2px auto;
-  height: 80px;
+  height: 60px;
 }
 </style>
