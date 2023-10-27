@@ -192,7 +192,7 @@ export default {
 
   .completed {
     text-decoration: line-through;
-    color: grey;
+    color: rgb(79, 76, 76);
   }
 
   .extra-container {
