@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="back">
     <input type="text" class="todo-input" placeholder="What needs to be done" v-model="newTodo" @keyup.enter="addTodo">
     <transition-group name="fade" enter-active-class="animated fadeInUp" leave-active-class="animated fadeOutDown">
     <div v-for="(todo, index) in todosFiltered" :key="todo.id" class="todo-item">
@@ -48,16 +48,11 @@ export default {
       todos: [
         {
           'id': 1,
-          'title': 'Finish Vue Screencast',
+          'title': 'Update the project',
           'completed': false,
           'editing': false,
         },
-        {
-          'id': 2,
-          'title': 'Take over world',
-          'completed': false,
-          'editing': false,
-        },
+        
       ]
     }
   },
@@ -136,12 +131,17 @@ export default {
 <style lang="scss">
   @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
 
+
+
+ 
+  
   .todo-input {
     width: 100%;
     padding: 10px 18px;
     font-size: 18px;
     margin-bottom: 16px;
-
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    
     &:focus {
       outline: 0;
     }
@@ -153,6 +153,8 @@ export default {
     align-items: center;
     justify-content: space-between;
     animation-duration: 0.3s;
+    
+  
   }
 
   .remove-item {
@@ -170,7 +172,7 @@ export default {
 
   .todo-item-label {
     padding: 10px;
-    border: 1px solid white;
+   
     margin-left: 12px;
   }
 
@@ -209,7 +211,7 @@ export default {
     appearance: none;
 
     &:hover {
-      background: lightgreen;
+      background: rgb(165, 129, 170);
     }
 
     &:focus {
@@ -218,7 +220,7 @@ export default {
   }
 
   .active {
-    background: lightgreen;
+    background: rgb(165, 129, 170);
   }
 
   // CSS Transitions
